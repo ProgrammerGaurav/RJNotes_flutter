@@ -19,23 +19,7 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          'Rj Notes',
-          style: TextStyle(color: Colors.white, fontSize: 30.0),
-        ),
-        actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.exit_to_app),
-            tooltip: 'Logout',
-            onPressed: () {
-              openPage(context);
-            },
-          ),
-        ],
-        elevation: 15.0,
-      ),
+      body: Text('HelloWorld!'),
     );
   }
 }
