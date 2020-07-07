@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
         title: Text(
           'RJNotes',
           style: TextStyle(
-            fontSize: 20.0,
+            fontSize: 25.0,
             fontFamily: 'Montserrat',
             color: Colors.black,
           ),
