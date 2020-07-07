@@ -27,74 +27,28 @@ class HomeBody extends StatelessWidget {
             ),
           ),
         ),
-        Semesters(),
+        Subjects(),
         Activity(),
       ],
     );
   }
 }
 
-class Semesters extends StatefulWidget {
+class Subjects extends StatefulWidget {
   @override
-  _SemestersState createState() => _SemestersState();
+  _SubjectsState createState() => _SubjectsState();
 }
 
-class _SemestersState extends State<Semesters> {
-  List<String> categories = [
-    "Activity",
-    "Semester 1",
-    "Semester 2",
-    "Semester 3",
-    "Semester 4",
-    "Semester 5",
-    "Semester 6"
-  ];
-  int selectedIndex = 0;
+class _SubjectsState extends State<Subjects> {
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 35,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: categories.length,
-        itemBuilder: (context, index) => buildCategory(index),
-      ),
-    );
-  }
-
-  Widget buildCategory(int index) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          selectedIndex = index;
-        });
-      },
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 5.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Container(
+        child: Row(
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5.0),
-              child: Text(
-                categories[index],
-                style: TextStyle(
-                    fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.bold,
-                    color: selectedIndex == index
-                        ? Colors.black
-                        : Colors.grey[300]),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5.0),
-              child: Container(
-                margin: EdgeInsets.only(top: 3.0),
-                height: 2,
-                width: 30,
-                color:
-                    selectedIndex == index ? Colors.black : Colors.transparent,
-              ),
+            Card(
+              color: Colors.blueGrey,
             ),
           ],
         ),
