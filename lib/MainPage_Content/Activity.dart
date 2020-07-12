@@ -63,7 +63,10 @@ class Activity extends StatelessWidget {
                       padding: const EdgeInsets.all(4.0),
                       child: Container(
                         decoration: BoxDecoration(
-                          border: Border.all(),
+                          border: Border.all(width: 0.5, color: Colors.grey),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(15.0),
+                          ),
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
