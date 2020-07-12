@@ -100,7 +100,7 @@ class Activity extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(20),
                                       color: Colors.tealAccent[700]),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(12.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: Text(
                                       contrib.linkText,
                                       style: TextStyle(

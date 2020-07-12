@@ -104,7 +104,11 @@ class _HomeState extends State<Home> {
                 dense: true,
                 title: Text(
                   "Semester 1",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 20,
+                    color: Colors.black,
+                  ),
                 ),
                 onTap: () => sem(0),
               ),
@@ -112,7 +116,11 @@ class _HomeState extends State<Home> {
                 dense: true,
                 title: Text(
                   "Semester 2",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 20,
+                    color: Colors.black,
+                  ),
                 ),
                 onTap: () => sem(1),
               ),
@@ -120,7 +128,11 @@ class _HomeState extends State<Home> {
                 dense: true,
                 title: Text(
                   "Semester 3",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 20,
+                    color: Colors.black,
+                  ),
                 ),
                 onTap: () => sem(2),
               ),
@@ -128,7 +140,11 @@ class _HomeState extends State<Home> {
                 dense: true,
                 title: Text(
                   "Semester 4",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 20,
+                    color: Colors.black,
+                  ),
                 ),
                 onTap: () => sem(3),
               ),
@@ -136,7 +152,11 @@ class _HomeState extends State<Home> {
                 dense: true,
                 title: Text(
                   "Semester 5",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 20,
+                    color: Colors.black,
+                  ),
                 ),
                 onTap: () => sem(4),
               ),
@@ -144,7 +164,11 @@ class _HomeState extends State<Home> {
                 dense: true,
                 title: Text(
                   "Semester 6",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontSize: 20,
+                    color: Colors.black,
+                  ),
                 ),
                 onTap: () => sem(5),
               ),
