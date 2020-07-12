@@ -89,6 +89,7 @@ class Activity extends StatelessWidget {
                                 fontFamily: 'Montserrat',
                                 fontSize: 12,
                                 color: Colors.grey,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             Padding(
