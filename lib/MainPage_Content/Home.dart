@@ -61,7 +61,6 @@ class _HomeState extends State<Home> {
           child: ListView(children: <Widget>[
         Container(
           padding: EdgeInsets.only(top: 50, left: 8, right: 8, bottom: 8),
-          // color: HexColor("#31343E"),
           color: Colors.white,
           child: Row(
             children: <Widget>[
@@ -110,7 +109,10 @@ class _HomeState extends State<Home> {
                     color: Colors.black,
                   ),
                 ),
-                onTap: () => sem(0),
+                onTap: () {
+                  sem(0);
+                  Navigator.pop(context);
+                },
               ),
               ListTile(
                 dense: true,
@@ -122,7 +124,10 @@ class _HomeState extends State<Home> {
                     color: Colors.black,
                   ),
                 ),
-                onTap: () => sem(1),
+                onTap: () {
+                  sem(1);
+                  Navigator.pop(context);
+                },
               ),
               ListTile(
                 dense: true,
@@ -134,7 +139,10 @@ class _HomeState extends State<Home> {
                     color: Colors.black,
                   ),
                 ),
-                onTap: () => sem(2),
+                onTap: () {
+                  sem(2);
+                  Navigator.pop(context);
+                },
               ),
               ListTile(
                 dense: true,
@@ -146,7 +154,10 @@ class _HomeState extends State<Home> {
                     color: Colors.black,
                   ),
                 ),
-                onTap: () => sem(3),
+                onTap: () {
+                  sem(3);
+                  Navigator.pop(context);
+                },
               ),
               ListTile(
                 dense: true,
@@ -158,7 +169,10 @@ class _HomeState extends State<Home> {
                     color: Colors.black,
                   ),
                 ),
-                onTap: () => sem(4),
+                onTap: () {
+                  sem(4);
+                  Navigator.pop(context);
+                },
               ),
               ListTile(
                 dense: true,
@@ -170,7 +184,10 @@ class _HomeState extends State<Home> {
                     color: Colors.black,
                   ),
                 ),
-                onTap: () => sem(5),
+                onTap: () {
+                  sem(5);
+                  Navigator.pop(context);
+                },
               ),
             ],
           ),

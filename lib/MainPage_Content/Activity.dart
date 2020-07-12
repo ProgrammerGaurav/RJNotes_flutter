@@ -90,6 +90,8 @@ class Activity extends StatelessWidget {
                                 contrib.subtitle,
                                 style: TextStyle(
                                   fontFamily: 'Montserrat',
+                                  wordSpacing: 2,
+                                  letterSpacing: 0.5,
                                   fontSize: 12,
                                   color: Colors.grey,
                                   fontWeight: FontWeight.bold,
