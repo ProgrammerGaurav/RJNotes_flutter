@@ -3,19 +3,14 @@ import 'Profile.dart';
 import 'Activity.dart';
 
 void openProfile(BuildContext context) {
-  Navigator.push(context, MaterialPageRoute(
-    builder: (BuildContext context) {
-      return Profile();
-    },
-  ));
-}
-
-void openactivity(BuildContext context) {
-  Navigator.push(context, MaterialPageRoute(
-    builder: (BuildContext context) {
-      return Activity();
-    },
-  ));
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (BuildContext context) {
+        return Profile();
+      },
+    ),
+  );
 }
 
 class Home extends StatefulWidget {
@@ -171,14 +166,6 @@ class _HomeState extends State<Home> {
           ),
         ),
         actions: <Widget>[
-          IconButton(
-              icon: const Icon(
-                Icons.search,
-                color: Colors.black,
-              ),
-              onPressed: () {
-                openactivity(context);
-              }),
           IconButton(
               icon: const Icon(
                 Icons.perm_identity,
@@ -422,7 +409,7 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          Activity(),
+          Activity(contributor: getData()),
         ],
       ),
     );
