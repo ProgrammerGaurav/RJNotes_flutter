@@ -5,7 +5,8 @@ import 'dart:async';
 import 'package:url_launcher/url_launcher.dart';
 
 Future<ResultContributor> getData() async {
-  final response = await http.get('http://127.0.0.1:8000/api/activity/');
+  final response =
+      await http.get('https://rjnotes.herokuapp.com/api/activity/');
   if (response.statusCode == 200) {
     return fromJson(json.decode(response.body));
   } else {
