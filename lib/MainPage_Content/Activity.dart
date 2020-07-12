@@ -59,17 +59,53 @@ class Activity extends StatelessWidget {
                   itemCount: fetchData.data.result.length,
                   itemBuilder: (context, index) {
                     final contrib = fetchData.data.result[index];
-                    return Column(
-                      children: [
-                        Text(contrib.title),
-                        Text(contrib.subtitle),
-                        RaisedButton(
-                          onPressed: () => {launch(contrib.link)},
-                          color: Colors.blue,
-                          child: Text(contrib.linkText),
-                          textColor: Colors.white,
-                        )
-                      ],
+                    return Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: <Widget>[
+                            Text(
+                              contrib.title,
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 20,
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              contrib.subtitle,
+                              style: TextStyle(
+                                fontFamily: 'Montserrat',
+                                fontSize: 12,
+                                color: Colors.grey,
+                              ),
+                            ),
+                            FlatButton(
+                              onPressed: () => {launch(contrib.link)},
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: Colors.tealAccent[700]),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Text(
+                                    contrib.linkText,
+                                    style: TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontSize: 12,
+                                        color: Colors.white),
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
                     );
                   });
             } else if (fetchData.hasError) {

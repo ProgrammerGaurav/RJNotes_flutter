@@ -409,7 +409,15 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          Activity(contributor: getData()),
+          SizedBox(
+            height: 15,
+          ),
+          Container(
+            height: 330,
+            child: Activity(
+              contributor: getData(),
+            ),
+          ),
         ],
       ),
     );
