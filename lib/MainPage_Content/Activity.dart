@@ -83,13 +83,17 @@ class Activity extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Text(
-                              contrib.subtitle,
-                              style: TextStyle(
-                                fontFamily: 'Montserrat',
-                                fontSize: 12,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
+                            Padding(
+                              padding:
+                                  const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                              child: Text(
+                                contrib.subtitle,
+                                style: TextStyle(
+                                  fontFamily: 'Montserrat',
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                             Padding(
