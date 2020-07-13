@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pro/Pdf_view.dart';
 import 'Profile.dart';
 import 'Activity.dart';
 
@@ -257,8 +258,13 @@ class _HomeState extends State<Home> {
               color: Colors.transparent,
               child: Row(
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  FlatButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Pdf_view()),
+                      );
+                    },
                     child: Container(
                       child: Center(
                         child: Text(
